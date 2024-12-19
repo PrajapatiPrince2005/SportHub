@@ -7,14 +7,17 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="container">
-        <h2>Login</h2>
-        <form action="login_process.php" method="POST">
-            <input type="text" name="username" placeholder="Enter Username" required>
-            <input type="password" name="password" placeholder="Enter Password" required>
-            <button type="submit">Login</button>
-        </form>
-        <p>Don't have an account? <a href="register.php">Register Here</a></p>
+    <div class="background-container">
+        <!-- Login Container -->
+        <div class="container">
+            <h2>Login</h2>
+            <form action="login_process.php" method="POST">
+                <input type="text" name="username" placeholder="Enter Username" required>
+                <input type="password" name="password" placeholder="Enter Password" required>
+                <button type="submit">Login</button>
+            </form>
+            <p>Don't have an account? <a href="register.php">Register Here</a></p>
+        </div>
     </div>
 </body>
 </html>
