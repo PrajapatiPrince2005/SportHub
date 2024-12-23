@@ -43,16 +43,25 @@
                         <a class="nav-link active" aria-current="page" href="#">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Sports News</a>
+                        <a class="nav-link" href="swimming.php">Swimming</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Live Scores</a>
+                        <a class="nav-link" href="#">Football</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Upcoming Events</a>
+                        <a class="nav-link" href="#">Cricket</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Badminton</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Table Tennis</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.php">Logout</a>
                     </li>
                 </ul>
             </div>
