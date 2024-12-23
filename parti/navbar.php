@@ -55,7 +55,7 @@
                         <a class="nav-link" href="#">Badminton</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Table Tennis</a>
+                        <a class="nav-link" href="tabletennis.php">Table Tennis</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>

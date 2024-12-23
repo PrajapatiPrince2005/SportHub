@@ -43,10 +43,32 @@
             <div class="col-md-4">
                 <!-- Product Card -->
                 <div class="product-card">
+                    <img src="photo/swimming/sw2.jpg" alt="Product Image" class="product-image">
+                    <h2 class="product-title"> Swim Training Float</h2>
+                    <p class="product-description"> Ideal for beginners, this swim training float provides stability and support while learning to swim.
+                    </p>
+                    <p class="product-price">₹399</p>
+                    <button class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- Product Card -->
+                <div class="product-card">
                     <img src="photo/swimming/sw5.jpg" alt="Product Image" class="product-image">
-                    <h2 class="product-title">Amazing Product</h2>
-                    <p class="product-description">This is a high-quality product that offers great value for your money. Don't miss out!</p>
-                    <p class="product-price">₹999</p>
+                    <h2 class="product-title">Swimming Flippers</h2>
+                    <p class="product-description">Comfortable swimming flippers designed to increase speed and improve leg strength while swimming.
+                    </p>
+                    <p class="product-price">₹599</p>
+                    <button class="btn btn-primary">Add to Cart</button>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <!-- Product Card -->
+                <div class="product-card">
+                    <img src="photo/swimming/sw8.png" alt="Product Image" class="product-image">
+                    <h2 class="product-title">Swimming Kickboard</h2>
+                    <p class="product-description"> Lightweight and durable kickboard to help improve your swimming technique your training sessions.</p>
+                    <p class="product-price">₹599</p>
                     <button class="btn btn-primary">Add to Cart</button>
                 </div>
             </div>
