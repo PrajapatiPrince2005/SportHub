@@ -16,7 +16,7 @@
                 <input type="password" name="password" placeholder="Enter Password" required>
                 <button type="submit">Login</button>
             </form>
-            <p>Don't have an account ? <a href="register.php">Register Here</a></p>
+            <p>Don't have an acccccccount ? <a href="register.php">Register Here</a></p>
         </div>
     </div>
 </body>
