@@ -58,6 +58,9 @@
                         <a class="nav-link" href="tabletennis.php">Table Tennis</a>
                     </li>
                     <li class="nav-item">
+                        <a class="nav-link" href="#">Add to Card</a>
+                    </li>
+                    <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>
                     </li>
                     <li class="nav-item">
