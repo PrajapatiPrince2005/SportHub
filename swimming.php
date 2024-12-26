@@ -35,9 +35,12 @@
         }
     </style>
 </head>
-<body><?php
+<body>
+    <?php
     require "parti/navbar.php";
     ?>
+    <br>
+    <h2><center>Explore Premium Swimming Equipment for Every Level</center></h2>
     <div class="container my-5">
         <div class="row justify-content-center">
             <div class="col-md-4">
@@ -72,9 +75,43 @@
                     <button class="btn btn-primary">Add to Cart</button>
                 </div>
             </div>
+            <!-- Product Card -->
+            <div class="col-md-4">
+        <div class="product-card">
+            <img src="https://www.bing.com/th?id=OPAC.wG6166JjPs4U0A474C474&o=5&pid=21.1&w=148&h=148&rs=1&qlt=100&dpr=1.3&bw=6&bc=FFFFFF" alt="Product Image" class="product-image">
+            <h2 class="product-title">Waterproof Goggles</h2>
+            <p class="product-description">Durable, anti-fog swimming goggles designed for crystal-clear vision underwater.</p>
+            <p class="product-price">₹349</p>
+            <button class="btn btn-primary">Add to Cart</button>
         </div>
     </div>
+    <!-- Product Card -->
+    <div class="col-md-4">
+        <div class="product-card">
+            <img src="photo/swimming/sw11.jpeg" alt="Product Image" class="product-image">
+            <h2 class="product-title">Swimming Cap</h2>
+            <p class="product-description">Premium quality silicone swimming cap that protects your hair from chlorine and water damage.</p>
+            <p class="product-price">₹199</p>
+            <button class="btn btn-primary">Add to Cart</button>
+        </div>
+    </div>
+    <!-- Product Card -->
+    <div class="col-md-4">
+        <div class="product-card">
+            <img src="photo/swimming/sw10.jpeg" alt="Product Image" class="product-image">
+            <h2 class="product-title">Swim Resistance Bands</h2>
+            <p class="product-description">Enhance your swimming endurance with these high-quality resistance bands for dryland training.</p>
+            <p class="product-price">₹799</p>
+            <button class="btn btn-primary">Add to Cart</button>
+        </div>
+        </div>
+    </div>
+    </div>
 
+    <!-- require use to add footer -->
+    <?php
+    require "parti/footer.php";
+    ?>
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>

@@ -7,26 +7,26 @@
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
     <style>
-      
-    .navbar {
-        background-color: rgb(74, 138, 155);
-        height: 80px; /* Increase height */
-        padding: 15px; /* Adjust padding for more space */
-    }
-    .navbar-brand {
-        font-weight: bold;
-        color: white;
-        font-size: 1.5rem; /* Increase font size */
-    }
-    .navbar-nav .nav-link {
-        color: white;
-        font-size: 1.2rem; /* Increase font size of links */
-    }
-    .navbar-nav .nav-link:hover {
-        color: #FFD700;
-    }
-</style>
-
+        .navbar {
+            background-color: rgb(74, 138, 155);
+            height: 80px; /* Increase height */
+            padding: 15px; /* Adjust padding for more space */
+        }
+        .navbar-brand {
+            font-weight: bold;
+            color: white;
+            font-size: 1.5rem; /* Increase font size */
+        }
+        .navbar-nav .nav-link {
+            color: white;
+            font-size: 1.2rem; /* Increase font size of links */
+        }
+        .navbar-nav .nav-link:hover {
+            color: #FFD700;
+        }
+        .search-bar {
+            width: 300px;
+        }
     </style>
 </head>
 <body>
@@ -58,7 +58,7 @@
                         <a class="nav-link" href="tabletennis.php">Table Tennis</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Add to Card</a>
+                        <a class="nav-link" href="#">Add to Cart</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="#">Contact Us</a>
@@ -67,6 +67,11 @@
                         <a class="nav-link" href="index.php">Logout</a>
                     </li>
                 </ul>
+                <!-- Search Bar -->
+                <form class="d-flex ms-3" action="#" method="GET">
+                    <input class="form-control search-bar" type="search" placeholder="Search Products" aria-label="Search" name="search">
+                    <button class="btn btn-outline-light ms-2" type="submit">Search</button>
+                </form>
             </div>
         </div>
     </nav>
