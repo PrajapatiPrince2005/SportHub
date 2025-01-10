@@ -1,5 +1,5 @@
 <?php
-$connection = new mysqli('localhost', 'root', '', 'sportshub');
+$connection = new mysqli('localhost', 'root', '', 'sporthub');
 
 if ($connection->connect_error) {
     die("Connection failed: " . $connection->connect_error);
@@ -14,7 +14,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     $stmt->bind_param("sss", $username, $email, $password);
 
     if ($stmt->execute()) {
-        echo "Registration successful! <a href='index.php'>Login Here</a>";
+        echo "Registration successful! <a href='login.php'>Login Here</a>";
     } else {
         echo "Error: " . $stmt->error;
     }

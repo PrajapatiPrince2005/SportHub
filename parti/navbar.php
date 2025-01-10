@@ -64,7 +64,7 @@
                         <a class="nav-link" href="#">Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="index.php">Logout</a>
+                        <a class="nav-link" href="login.php">Logout</a>
                     </li>
                 </ul>
                 <!-- Search Bar -->
