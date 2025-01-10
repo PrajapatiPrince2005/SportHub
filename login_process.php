@@ -1,7 +1,7 @@
 
 <?php
 
-$connection = new mysqli('localhost', 'root', '', 'sportshub');
+$connection = new mysqli('localhost', 'root', '', 'sporthub');
 
 echo '<!DOCTYPE html>';
 echo '<html lang="en">';
@@ -44,6 +44,11 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
     }
 
     $stmt->close();
+}
+
+if($username="admin" && $password="admin2005")
+{
+    header("location:admin.php");
 }
 $connection->close();
 ?>
