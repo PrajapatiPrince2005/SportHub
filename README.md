@@ -1,4 +1,4 @@
-This is a E-Commerce Dynamic Web Site.
+This is a SportHub E-Commerce Dynamic Web Site.
 <br>
 Create By .
 <br>
@@ -8,3 +8,4 @@ Khilosiya Krupa
 <br>
 Barik Pratikshya
 <br>
+
