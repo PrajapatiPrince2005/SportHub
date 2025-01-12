@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>E-commerce Chatbot</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        /* Chatbot button */
+        .chatbot-button {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: white;
+            border: none;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            font-size: 30px;
+            cursor: pointer;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+
+        /* Chatbot box */
+        .chatbot-box {
+            position: fixed;
+            bottom: 90px;
+            right: 20px;
+            width: 350px;
+            height: 400px;
+            background-color: #fff;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+            display: none;
+            flex-direction: column;
+        }
+
+        .chatbot-header {
+            background-color: #007bff;
+            color: white;
+            padding: 10px;
+            font-size: 16px;
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .chatbot-messages {
+            flex: 1;
+            padding: 10px;
+            overflow-y: auto;
+            background-color: #f4f4f9;
+        }
+
+        .chatbot-input {
+            display: flex;
+            border-top: 1px solid #ccc;
+        }
+
+        .chatbot-input textarea {
+            flex: 1;
+            border: none;
+            padding: 10px;
+            font-size: 14px;
+            resize: none;
+        }
+
+        .chatbot-input button {
+            background-color: #007bff;
+            color: white;
+            border: none;
+            padding: 10px 15px;
+            cursor: pointer;
+        }
+
+        .chatbot-input button:hover {
+            background-color: #0056b3;
+        }
+
+        .message {
+            margin: 5px 0;
+        }
+
+        .message.user {
+            text-align: right;
+            color: blue;
+        }
+
+        .message.bot {
+            text-align: left;
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <!-- Chatbot Button -->
+    <button class="chatbot-button" onclick="toggleChatbot()">💬</button>
+
+    <!-- Chatbot Box -->
+    <div class="chatbot-box" id="chatbotBox">
+        <div class="chatbot-header">E-commerce Chatbot</div>
+        <div class="chatbot-messages" id="chatbotMessages"></div>
+        <div class="chatbot-input">
+            <textarea id="chatbotInput" rows="1" placeholder="Ask something..."></textarea>
+            <button onclick="sendChat()">Send</button>
+        </div>
+    </div>
+
+    <script>
+        // Toggle chatbot visibility
+        function toggleChatbot() {
+            const chatbotBox = document.getElementById("chatbotBox");
+            chatbotBox.style.display = chatbotBox.style.display === "flex" ? "none" : "flex";
+        }
+
+        // Predefined responses
+        const responses = {
+            "hello": "Hi there! How can I help you today?",
+            "products": "We have a wide range of products! Check out the categories on our home page.",
+            "delivery": "We offer delivery within 3-5 business days.",
+            "support": "You can contact our support team at support@example.com.",
+            "bye": "Goodbye! Have a great day!"
+        };
+
+        // Send user message and get bot response
+        function sendChat() {
+            const input = document.getElementById("chatbotInput");
+            const messages = document.getElementById("chatbotMessages");
+            const userMessage = input.value.trim().toLowerCase();
+
+            if (userMessage) {
+                // Add user message
+                const userDiv = document.createElement("div");
+                userDiv.className = "message user";
+                userDiv.textContent = input.value;
+                messages.appendChild(userDiv);
+
+                // Get bot response
+                const botDiv = document.createElement("div");
+                botDiv.className = "message bot";
+                botDiv.textContent = responses[userMessage] || "I'm sorry, I didn't understand that. Please try asking something else.";
+                messages.appendChild(botDiv);
+
+                // Scroll to latest message
+                messages.scrollTop = messages.scrollHeight;
+
+                // Clear input
+                input.value = "";
+            }
+        }
+    </script>
+</body>
+</html>
