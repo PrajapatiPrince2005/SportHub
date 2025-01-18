@@ -93,14 +93,26 @@
                         <a class="nav-link" href="#"><i class="bi bi-cart icon"></i>Add to Cart</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="orders.php"><i class="bi bi-truck icon"></i>Orders</a>
+                        <a class="nav-link" href="../orders.php"><i class="bi bi-truck icon"></i>Orders</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-envelope icon"></i>Contact Us</a>
+                        <a class="nav-link" href="../contact.php"><i class="bi bi-envelope icon"></i>Contact Us</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="login.php"><i class="bi bi-box-arrow-right icon"></i>Logout</a>
+                        <a class="nav-link" href="../login.php"><i class="bi bi-box-arrow-right icon"></i>Logout</a>
                     </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">
+                            <img src="../photo/userphoto/user_photo3.png" alt="User" class="rounded-circle" width="30" height="30">
+                            <span class="ms-2">User</span>
+                        </a>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-person icon"></i> Profile</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-gear icon"></i> Settings</a></li>
+                            <li><a class="dropdown-item" href="logout.php"><i class="bi bi-box-arrow-right icon"></i> Logout</a></li>
+                        </ul>
+                    </li>
+
                 </ul>
             </div>
         </div>
