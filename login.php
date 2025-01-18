@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="login.css">
 </head>
 <body>
+    
     <div class="background-container">
         <!-- Login Container -->
         <div class="container">
@@ -19,5 +20,6 @@
             <p>Don't have an account ? <a href="register.php">Register Here</a></p>
         </div>
     </div>
+    
 </body>
 </html>
