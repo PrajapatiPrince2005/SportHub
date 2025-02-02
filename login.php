@@ -11,10 +11,10 @@
     <div class="background-container">
         <!-- Login Container -->
         <div class="container">
-            <h2>Login</h2>
+            <h1>Login Now</h1>
             <form action="login_process.php" method="POST">
-                <input type="text" name="username" placeholder="Enter UserEmail-id" required>
-                <input type="password" name="password" placeholder="Enter Password" required>
+                <input class="box" type="text" name="username" placeholder="Enter UserEmail-id" required>
+                <input class="box" type="password" name="password" placeholder="Enter Password" required>
                 <button type="submit">Login</button>
             </form>
             <p>Don't have an account ? <a href="register.php">Register Here</a></p>
