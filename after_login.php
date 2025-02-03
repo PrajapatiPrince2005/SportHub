@@ -10,10 +10,22 @@
     <!-- Bootstrap Icons -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <style>
+        .background-image{
+            background-image: url('home2.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            height: 100vh;
+        }
+        li{
+            padding:10px 20px ;
+            border:1px solid burlywood;
+            border-radius: 50px;
+        }
         .navbar {
-            background-color: rgb(74, 138, 155);
+            
             height: 80px;
             padding: 15px;
+            gap: 1vw;
         }
 
         .navbar-brand {
@@ -30,17 +42,17 @@
         }
 
         .navbar-nav .nav-link:hover {
-            color: #FFD700;
+            color:rgb(219, 246, 123);
         }
 
         .navbar-nav .nav-link.active {
             color: white !important;
-            background-color: rgb(12, 12, 12);
+            /* background-color: rgb(142, 138, 138); */
             border-radius: 5px;
         }
 
         .dropdown-menu {
-            background-color: rgb(74, 138, 155);
+            background-color: rgb(0, 158, 220);
         }
 
         .dropdown-item {
@@ -48,8 +60,8 @@
         }
 
         .dropdown-item:hover {
-            color: #2874F0;
-            background-color: rgb(60, 120, 135);
+            color:rgb(12, 12, 12);
+            /* background-color: rgb(60, 120, 135); */
         }
 
         .search-bar {
@@ -59,10 +71,13 @@
         .icon {
             margin-right: 5px;
         }
+
+    
     </style>
 </head>
 
-<body>
+<body class="background-image">
+    <!-- <div class="background-image"></div> -->
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light">
         <div class="container-fluid">
@@ -71,14 +86,14 @@
                 <span class="navbar-toggler-icon"></span>
             </button>
             <!-- Search Bar -->
-            <form class="d-flex ms-3" action="#" method="GET">
+            <!-- <form class="d-flex ms-3" action="#" method="GET">
                 <input class="form-control search-bar" type="search" placeholder="Search Products" aria-label="Search" name="search">
                 <button class="btn btn-outline-light ms-2" type="submit"><i class="bi bi-search"></i></button>
-            </form>
+            </form> -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.php"><i class="bi bi-house icon"></i>Home</a>
+                        <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house icon"></i>Home</a>
                     </li>
                     <!-- Dropdown for Categories -->
                     <li class="nav-item dropdown">
@@ -86,21 +101,21 @@
                             <i class="bi bi-list icon"></i>Categories
                         </a>
                         <ul class="dropdown-menu" aria-labelledby="categoryDropdown">
-                            <li><a class="dropdown-item" href="swimming.php"><i class="bi bi-droplet icon"></i>Swimming</a></li>
-                            <li><a class="dropdown-item" href="football.php"><i class="bi bi-circle icon"></i>Football</a></li>
-                            <li><a class="dropdown-item" href="cricket.php"><i class="bi bi-trophy icon"></i>Cricket</a></li>
-                            <li><a class="dropdown-item" href="table_tennis.php"><i class="bi bi-award icon"></i>Table Tennis</a></li>
-                            <li><a class="dropdown-item" href="badminton.php"><i class="bi bi-activity icon"></i>Badminton</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-droplet icon"></i>Swimming</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-circle icon"></i>Football</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-trophy icon"></i>Cricket</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-award icon"></i>Table Tennis</a></li>
+                            <li><a class="dropdown-item" href="#"><i class="bi bi-activity icon"></i>Badminton</a></li>
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="cart.php"><i class="bi bi-cart icon"></i>Add to Cart</a>
+                        <a class="nav-link" href="#"><i class="bi bi-cart icon"></i>Add to Cart</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="orders.php"><i class="bi bi-truck icon"></i>Orders</a>
+                        <a class="nav-link" href="#"><i class="bi bi-truck icon"></i>Orders</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="contact.php"><i class="bi bi-envelope icon"></i>Contact Us</a>
+                        <a class="nav-link" href="#"><i class="bi bi-envelope icon"></i>Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login.php"><i class="bi bi-box-arrow-right icon"></i>Logout</a>
@@ -136,6 +151,7 @@
             });
         });
     </script>
+    <!-- <img  class="background" src="home.jpg" alt="" srcset=""> -->
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
