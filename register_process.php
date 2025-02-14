@@ -6,7 +6,7 @@ if ($conn->connect_error) die("Connection Failed: " . $conn->connect_error);
 $username = $_POST['username'];
 $email = $_POST['email'];
 $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-$confirm_password = $_POST['confirm_password'];
+$confirm_password = $_POST['repassword'];
 
 if (!password_verify($confirm_password, $password)) {
     die("<script>alert('Passwords do not match!'); window.location='register.php';</script>");

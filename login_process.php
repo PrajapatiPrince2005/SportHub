@@ -1,7 +1,7 @@
 <?php
 session_start();
 $conn = new mysqli('localhost', 'root', '', 'sporthub_db');
-$email = $_POST['username'];
+$email = $_POST['email'];
 $password = $_POST['password'];
 
 $result = $conn->query("SELECT * FROM user WHERE email='$email'");
