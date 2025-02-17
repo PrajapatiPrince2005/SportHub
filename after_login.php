@@ -23,7 +23,7 @@
         }
         .navbar {
             
-            height: 80px;
+            height: 90px;
             padding: 15px;
             gap: 1vw;
         }
@@ -33,10 +33,11 @@
             color: white;
             font-size: 1.5rem;
         }
-
+        
         .navbar-nav .nav-link {
+            border-radius: 50px;
             color: white;
-            font-size: 1.2rem;
+            font-size: 1.3rem;
             display: flex;
             align-items: center;
         }
@@ -44,25 +45,25 @@
         .navbar-nav .nav-link:hover {
             color:rgb(219, 246, 123);
         }
-
+        
         .navbar-nav .nav-link.active {
             color: white !important;
-            /* background-color: rgb(142, 138, 138); */
-            border-radius: 5px;
+            background-color: rgb(50, 50, 48);
+            /* border-radius: 50px; */
         }
-
+        
         .dropdown-menu {
-            background-color: rgb(0, 158, 220);
+            border-radius: 20px;
+            background-color: rgb(43, 44, 45);
+            color:rgb(12, 12, 12);
         }
 
         .dropdown-item {
             color: white;
+            border-radius: 50px;
         }
 
-        .dropdown-item:hover {
-            color:rgb(12, 12, 12);
-            /* background-color: rgb(60, 120, 135); */
-        }
+        
 
         .search-bar {
             width: 300px;
