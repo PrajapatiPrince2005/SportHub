@@ -9,7 +9,7 @@ if ($result->num_rows > 0) {
     $row = $result->fetch_assoc();
     if (password_verify($password, $row['password'])) {
         $_SESSION['user'] = $row['username'];
-        echo "<script>alert('Login Successful!'); window.location='after_login.php';</script>";
+        echo "<script>alert('Login Successful!'); window.location='include/header.php';</script>";
     } else {
         echo "<script>alert('Incorrect Password!'); window.location='dasbord.php';</script>";
     }
