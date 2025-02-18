@@ -11,7 +11,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css" rel="stylesheet">
     <style>
         .background-image{
-            background-image: url('home2.jpg');
+            background-image: url('../photo/home/home2.jpg');
             background-size: cover;
             background-repeat: no-repeat;
             height: 100vh;
@@ -94,7 +94,7 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#"><i class="bi bi-house icon"></i>Home</a>
+                        <a class="nav-link active" aria-current="page" href="home.php"><i class="bi bi-house icon"></i>Home</a>
                     </li>
                     <!-- Dropdown for Categories -->
                     <li class="nav-item dropdown">
@@ -110,20 +110,20 @@
                         </ul>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-cart icon"></i>Add to Cart</a>
+                        <a class="nav-link" href="addtocard.php"><i class="bi bi-cart icon"></i>Add to Cart</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-truck icon"></i>Orders</a>
+                        <a class="nav-link" href="order.php"><i class="bi bi-truck icon"></i>Orders</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#"><i class="bi bi-envelope icon"></i>Contact Us</a>
+                        <a class="nav-link" href="contact.php"><i class="bi bi-envelope icon"></i>Contact Us</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="login.php"><i class="bi bi-box-arrow-right icon"></i>Logout</a>
                     </li>
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle d-flex align-items-center" href="#" id="userDropdown" role="button" data-bs-toggle="dropdown">
-                            <img src="photo/userphoto/user_photo3.png" alt="User" class="rounded-circle" width="30" height="30">
+                            <img src="../photo/userphoto/user_photo3.png" alt="User" class="rounded-circle" width="30" height="30">
                             <span class="ms-2">User</span>
                         </a>
                         <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
@@ -137,6 +137,7 @@
         </div>
     </nav>
 
+    
     <!-- JavaScript for Click Effect -->
     <script>
         const navLinks = document.querySelectorAll('.nav-link');
