@@ -1,25 +1,28 @@
 <?php
-$connection = new mysqli('localhost', 'root', '', 'sportshub');
+session_start();
+$conn = new mysqli('localhost', 'root', '', 'sporthub_db');
+if ($conn->connect_error) die("Connection Failed: " . $conn->connect_error);
 
-if ($connection->connect_error) {
-    die("Connection failed: " . $connection->connect_error);
+$username = $_POST['username'];
+$email = $_POST['email'];
+$password = password_hash($_POST['password'], PASSWORD_BCRYPT);
+$confirm_password = $_POST['repassword'];
+
+if (!password_verify($confirm_password, $password)) {
+    die("<script>alert('Passwords do not match!'); window.location='register.php';</script>");
 }
 
-if ($_SERVER['REQUEST_METHOD'] === 'POST') {
-    $username = $_POST['username'];
-    $email = $_POST['email'];
-    $password = password_hash($_POST['password'], PASSWORD_BCRYPT);
-
-    $stmt = $connection->prepare("INSERT INTO users (username, email, password) VALUES (?, ?, ?)");
-    $stmt->bind_param("sss", $username, $email, $password);
-
-    if ($stmt->execute()) {
-        echo "Registration successful! <a href='index.php'>Login Here</a>";
-    } else {
-        echo "Error: " . $stmt->error;
-    }
-
-    $stmt->close();
+$stmt = $conn->prepare("INSERT INTO user (username, email, password) VALUES (?, ?, ?)");
+$stmt->bind_param("sss", $username, $email, $password);
+if ($stmt->execute()) {
+    $_SESSION['user'] = $username;
+    echo "<script>alert('Registration Successful!'); window.location='login.php';</script>";
+    
+} else {
+    echo "<script>alert('Error: Email already exists!'); window.location='register.php';</script>";
 }
-$connection->close();
+$stmt->close();
+$conn->close();
 ?>
+
+
